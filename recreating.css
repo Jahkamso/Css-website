@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-color: #eeecec;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+section {
+    border-radius: 60px;
+    width: 60em;
+}
+.header {
+    /* line-height: 50px; */
+    padding: 70px 50px 50px;
+    background-color: white;
+}
+.header h2, h3 {
+    padding-bottom: 20px;
+}
+.header h2 {
+    color: #51b9db;
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 40px;
+}
+.header h3 {
+    color: #9acd32;
+}
+.header p {
+    overflow-wrap: break-word;  
+    word-wrap: break-word; 
+    word-break: break-word;
+    line-height: 30px;
+    font-size: 15px;
+}
+.flex {
+    display: flex;
+    /* gap: 5px; */
+}
+.column-1 {
+    flex-basis: 50%;
+    background-color: #1dc4bb;
+    padding: 30px;
+    color: #fff;
+}
+.column-1 h3 {
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+.column-1 h2 {
+    padding-bottom: 40px;
+}
+.column-1 span {
+    font-size: 15px;
+    color: #f5f2e6;
+}
+.column-1 button {
+    margin-top: 30px;
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background: cornflowerblue;
+    color: #fff;
+    font-size: 18px;
+}
+.column-2 {
+    flex-basis: 50%;
+    background-color: #12e4d2;
+    color: #fff;
+    padding: 30px;
+}
+
+.column-2 h2 {
+    padding-bottom: 30px;
+}
+.column-2 p {
+    line-height: 28px;
+    color: #f5f2e6;
+    letter-spacing: 1px;
+    font-weight: 200;
+    word-wrap: break-word; 
+    word-break: break-word;
+    line-height: 30px;
+}
+
+
+
+@media (max-width: 45em){
+    section {
+        width: 100%;
+        border-radius: 10px;
+        /* text-align: center; */
+    }
+    .flex {
+        text-align: center;
+    }
+    .column-1 button {
+        width: 100%;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    .column-2 p {
+        text-align: left;
+    }
+}
+
+@media (max-width: 60em) {
+    section {
+        width: 98%;
+    }
+}
+
+
+
+
+
+
+
